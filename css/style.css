@@ -1,0 +1,38 @@
+.container {
+    width: 600px;
+    height: 600px;
+    margin: 50px auto 0;
+    border: 1px solid black;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(23, 23, 25, 1) 81%, rgba(0, 212, 255, 1) 100%);
+}
+
+.kotak {
+    width: 410px;
+    height: 400px;
+    background-image: url('img/alucard.jpg');
+    position: absolute;
+    float: left;
+    border: 1px solid lightblue;
+    filter: brightness(160%);
+    opacity: 0.6;
+    border-radius: 100%;
+    animation-name: animasiKotak;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+    animation-fill-mode: none;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-play-state: running;
+}
+
+@keyframes animasiKotak {
+    0% {
+        background-image: url('img/alucard.jpg');
+        margin-top: 50px;
+    }
+    100% {
+        transform: translateY(80px);
+    }
+}
